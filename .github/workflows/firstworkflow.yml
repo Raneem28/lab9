@@ -8,4 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cat firstfile.txt
+
+      - name: Show files
+        run: ls -la
+
+      - name: Print file
+        run: cat firstfile.txt
